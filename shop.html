@@ -1,0 +1,58 @@
+<!doctype html>
+<head>
+    <title>United naval Space Command</title>
+     <link rel="stylesheet" href="styles.css">    
+
+    <script>
+    function calculate() {
+        var data = document.getElementById("sizeData").value;
+        if(data < 42) {
+            document.getElementById("answer").innerHTML = 'size is small';
+        } else{
+            document.getElementById("answer").innerHTML = 'size is large';
+        }
+        
+    }
+    
+    </script>
+
+</head>
+
+<nav>
+    <img src="images/logo.png" alt="logo">
+    <div class="links">
+        <a href="index.html">Home</a>
+        <a href="info.html">Information</a>
+        <a href="shop.html">shop</a>
+    </div>
+</nav>
+
+<section>
+    <ul>
+        <li>
+        <img src="images/promo.png" alt="promo">
+            <h1>Price:</h1>
+            <p>$4500</p>
+        </li>
+<!--shopping price-->
+        <li>
+        <img src="images/combatVest2.png" alt="combatVest2">
+        <h1>Price:</h1>
+            <p>$230</p>
+        </li>
+<!--shopping price-->
+        <li> 
+        <img src="images/logo.png" alt="logo">
+        <h1>Price:</h1>
+        <p>$5000</p>
+        </li>
+<!--shopping price-->
+    </ul> <br>
+    <div class="calc">
+    <h1>Calculator</h1>
+    <input type="number" name="size" id="sizeData">
+    <button type="submit" onclick="calculate()">Submit</button>
+    <p id="answer"></p>
+ </div>
+ </section>
+<!--calculator function-->
